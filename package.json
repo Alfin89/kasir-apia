@@ -10,12 +10,14 @@
         "production": "mix --production"
     },
     "devDependencies": {
-        "axios": "^0.25",
+        "axios": "^0.25.0",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14"
     },
     "dependencies": {
+        "@react-navigation/native": "^7.0.0",
+        "@react-navigation/stack": "^7.0.0",
         "react-native-app": "^1.0.0",
         "react-native-cli": "^2.0.1"
     }
