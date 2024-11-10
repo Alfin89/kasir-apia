@@ -2,7 +2,10 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CustomersController;
+use App\Http\Controllers\UsersController;
+use App\Http\Controllers\OrdersController;
+use App\Http\Controllers\OrderDetailsController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,3 +20,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::apiResource('customers', CustomersController::class);
+Route::apiResource('users', UsersController::class);
+Route::apiResource('orders', OrdersController::class);
+Route::apiResource('order-details', OrderDetailsController::class);
